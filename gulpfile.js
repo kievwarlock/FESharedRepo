@@ -1,18 +1,18 @@
 var gulp         = require('gulp'),
-	spritesmith  = require('gulp.spritesmith'),
-	pug          = require('gulp-pug'),
-	sass         = require('gulp-sass'),
-	notify       = require('gulp-notify'),
-	autoprefixer = require('gulp-autoprefixer'),
-	cleanCSS     = require('gulp-clean-css'),
-	bourbon      = require('node-bourbon'),
-	csscomb      = require('gulp-csscomb'),
-	rename       = require('gulp-rename'),
-	browserSync  = require('browser-sync'),
-	imagemin     = require('gulp-imagemin'),
-	pngquant     = require('imagemin-pngquant'),
-	concat       = require('gulp-concat'),
-	uglify       = require('gulp-uglify');
+	spritesmith    = require('gulp.spritesmith'),
+	pug            = require('gulp-pug'),
+	sass           = require('gulp-sass'),
+	notify         = require('gulp-notify'),
+	autoprefixer   = require('gulp-autoprefixer'),
+	cleanCSS       = require('gulp-clean-css'),
+	bourbon        = require('node-bourbon'),
+	csscomb        = require('gulp-csscomb'),
+	rename         = require('gulp-rename'),
+	browserSync    = require('browser-sync'),
+	imagemin       = require('gulp-imagemin'),
+	pngquant       = require('imagemin-pngquant'),
+	concat         = require('gulp-concat'),
+	uglify         = require('gulp-uglify');
 
 gulp.task('sprite', function(){
 	var spriteData = gulp.src(['src/img/icons/*.*'])
@@ -56,7 +56,6 @@ gulp.task('pug', function(){
 		.pipe(gulp.dest('app'));
 
 });
-
 
 gulp.task('sass', function() {
     return gulp.src('src/scss/**/*.scss')
