@@ -1,0 +1,11 @@
+mixin list
+	ul
+		li foo
+		li bar
+		li baz
+mixin table (tr, td)
+	table
+		-for(var i=0; i < tr; i++)
+			tr
+				-for(var j = 0; j < td; j++)
+					td

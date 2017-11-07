@@ -66,7 +66,7 @@ gulp.task('sass', function() {
         .pipe(cleanCSS())
         .pipe(csscomb())
         .pipe(gulp.dest('app/css'))
-        .pipe(browserSync.reload({stream: true}))
+        //.pipe(browserSync.reload({stream: true}))
 });
 
 gulp.task('scripts', function() {
