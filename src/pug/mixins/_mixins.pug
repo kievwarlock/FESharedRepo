@@ -9,3 +9,10 @@ mixin table (tr, td)
 			tr
 				-for(var j = 0; j < td; j++)
 					td
+
+mixin ecoProfile(says, src, name, position)
+	div(class='ecologist')
+		p(class='ecologist__says')= says
+		img(class='ecologist__img' src=src)
+		h3(class='ecologist__name')= name 
+		p(class='ecologist__position')= position

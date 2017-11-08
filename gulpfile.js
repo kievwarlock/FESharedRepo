@@ -12,7 +12,8 @@ var gulp         = require('gulp'),
 	imagemin       = require('gulp-imagemin'),
 	pngquant       = require('imagemin-pngquant'),
 	concat         = require('gulp-concat'),
-	uglify         = require('gulp-uglify');
+	uglify         = require('gulp-uglify'),
+	reload         = browserSync.reload;
 
 gulp.task('sprite', function(){
 	var spriteData = gulp.src(['src/img/icons/*.*'])
@@ -82,5 +83,5 @@ gulp.task('scripts', function() {
 gulp.task('watch', ['pug','sass', 'scripts', 'browserSync'], function() {
     gulp.watch('src/pug/**/*.pug', ['pug']);
     gulp.watch('src/scss/**/*.scss', ['sass']);
-    gulp.watch('app/*.html', browserSync.reload({stream: true}));
+    gulp.watch("app/*.html").on("change", reload); //для обновления страницы заменил строку, было раньше(не обновляло): gulp.watch('app/*.html', browserSync.reload({stream: true}));
 });

@@ -1,0 +1,27 @@
+include ../mixins/_mixins.pug
+
+section(class='ecologistsSays')
+	div(class='container')
+		h2(class='ecologistsSays__section-title') WHat our ecologists are saying
+		div(class='ecologistsSays__article-decorative-line orange')
+		h6(class='ecologistsSays__title-little') For a broader coverage related to this topic
+		div(class='ecologistsSays__ecologists')
+		+ecoProfile(
+					'Forests are the dominant terrestrial ecosystem of Earth, and are distributed across the globe. The amount of precipitation and the forest composition.',
+					'img/AnnClotPhoto.png',
+					'Ann Klot',
+					'Ecologist'
+		)
+		+ecoProfile(
+					'Administrative definitions are based primarily upon the legal designations of land, and commonly bear no relationship to the vegetation growing on the land.',
+					'img/JohnLino.png',
+					'John Lino',
+					'Ecologist'
+		)
+		+ecoProfile(
+					'A forest is made up of many layers. Starting from the ground level and moving up, the main layers of all forest types are the forest floor.',
+					'img/TomRuftPhoto.png',
+					'Tom Ruft',
+					'Ecologist'
+		)
+
