@@ -2,13 +2,13 @@ doctype html
 html
 		head
 		body
+			include ../mixins/_mixins.pug
+			block header
+				header
+				include ../includes/_header.pug
+				include ../includes/_wood.pug					
 			block main
-				include ../mixins/_mixins.pug
-				
-				include ../includes/_forestOpen.pug
-				include ../includes/_structureType.pug
-				include ../includes/_forestEvolution.pug
-			block case
+				main
 			block footer
 				footer
 		
