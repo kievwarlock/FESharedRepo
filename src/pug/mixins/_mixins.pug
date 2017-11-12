@@ -13,7 +13,7 @@ mixin table (tr, td)
 mixin ecoProfile(says, src, name, position)
 	div(class='ecologist')
 		p(class='ecologist__says')= says
-		img(class='ecologist__img' src=src)
+		img(class='ecologist__img' src=src alt=name)
 		h3(class='ecologist__name')= name 
 		p(class='ecologist__position')= position
 
