@@ -16,3 +16,9 @@ mixin ecoProfile(says, src, name, position)
 		img(class='ecologist__img' src=src)
 		h3(class='ecologist__name')= name 
 		p(class='ecologist__position')= position
+
+mixin anotherList(title,text)
+	ul
+		each item in anotherList
+			li item.title=anotherList.title
+			li item.text=anotherList.text

@@ -4,7 +4,7 @@ var gulp         = require('gulp'),
 	sass           = require('gulp-sass'),
 	notify         = require('gulp-notify'),
 	autoprefixer   = require('gulp-autoprefixer'),
-	cleanCSS       = require('gulp-clean-css'),
+cleanCSS       = require('gulp-clean-css'),
 	bourbon        = require('node-bourbon'),
 	csscomb        = require('gulp-csscomb'),
 	rename         = require('gulp-rename'),
@@ -63,9 +63,9 @@ gulp.task('sass', function() {
         .pipe(sass({includePaths: bourbon.includePaths}) //подключаем Bourbon
         .on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix : ''})) 
-        .pipe(autoprefixer(['last 15 versions'])) //подключаем Autoprefixer
-        .pipe(cleanCSS())
-        .pipe(csscomb())
+        //.pipe(autoprefixer(['last 15 versions'])) //подключаем Autoprefixer
+        //.pipe(cleanCSS())
+        //.pipe(csscomb())
         .pipe(gulp.dest('app/css'))
         //.pipe(browserSync.reload({stream: true}))
 });
