@@ -1,18 +1,18 @@
-@import "veriables";
+@import "components/veriables";
 
-@import "forestOpen";
-@import "structureType";
-@import "forestEvolution";
-
-
+@import "components/forestOpen";
+@import "components/structureType";
+@import "components/forestEvolution";
 
 
 
-.btn {
-	display: inline-block;
-	background: $btn-bg;
-	padding: 0 3*$base-line-height;
-	height: 2*$base-line-height;
-	line-height: 2*$base-line-height;
-	font-size: $base-line-height;
-}
+
+
+// .btn {
+// 	display: inline-block;
+// 	background: $btn-bg;
+// 	padding: 0 3*$base-line-height;
+// 	height: 2*$base-line-height;
+// 	line-height: 2*$base-line-height;
+// 	font-size: $base-line-height;
+// }
