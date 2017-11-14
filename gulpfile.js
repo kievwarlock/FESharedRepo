@@ -63,7 +63,7 @@ gulp.task('sass', function() {
         .pipe(sass({includePaths: bourbon.includePaths}) //подключаем Bourbon
         .on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix : ''})) 
-        //.pipe(autoprefixer(['last 15 versions'])) //подключаем Autoprefixer
+        .pipe(autoprefixer(['last 5 versions'])) //подключаем Autoprefixer
         //.pipe(cleanCSS())
         //.pipe(csscomb())
         .pipe(gulp.dest('app/css'))
