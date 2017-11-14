@@ -1,13 +1,15 @@
-ul 
-	li: a(class='header__menu-item_active' href='index.html') Home
-	li: a(class='header__menu-item' href='about-us.html') About Us
-	li: a(class='header__menu-item' href='contacts.html') Contacts
-//-var menu = ['Home', 'About Us', 'Contacts']
+-var menu = ['Home', 'About Us', 'Contacts']
 	ul.menu
 		each item in menu
-			-if(item == currentPage)
+			if(item == 'Home' && currentPage != 'Home')
+				li
+					a(class='header__menu-item' href='index.html')= item
+			else if(item == 'Home' && currentPage == 'Home')
+				li
+					a(class='header__menu-item_active' href='index.html')= item
+			else if (item == currentPage && currentPage != 'Home')
 				li
 					a(class='header__menu-item_active' href=item.toLowerCase().replace('\ ','-')+'.html')= item
-			-else
+			else
 				li
 					a(class='header__menu-item' href=item.toLowerCase().replace('\ ','-')+'.html')= item

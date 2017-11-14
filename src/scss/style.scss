@@ -1,6 +1,6 @@
 $base-line-height: 16px;
 $btn-bg: red;
-
+$font-size: 12px;
 
 .btn {
 	display: inline-block;
@@ -9,4 +9,70 @@ $btn-bg: red;
 	height: 2*$base-line-height;
 	line-height: 2*$base-line-height;
 	font-size: $base-line-height;
+}
+
+@mixin btn($color, $background) {
+	color: $color;
+	background: $background;
+}
+
+.button {
+	@include btn(#fff, #000);
+}
+
+.button1 {
+	@extend .button;
+	color: green;
+}
+form %flat-btn {
+	color: red;
+	width: 200px;
+	padding: $font-size / 2;
+
+}
+ .flat-btn {
+ 	@extend %flat-btn
+}
+
+$first: true;
+$second: false;
+
+.menu {
+	color: green;
+	@if $first == true and $second == true {
+		background: blue;
+	}
+	@else if $first == true and $second == false {
+		background: brown;
+	}
+}
+
+@for $i from 1 through 3 {
+	.item #{$i} {width: 2em * $i}
+}
+
+%col {
+	float: left;
+	margin: 0;
+	padding: 0 10px;
+}
+
+$columns: 16;
+
+@for $i from 1 through $columns {
+	.col #{$i} {
+		width: (100%/$columns)*$i;
+		@extend %col;
+	}
+}
+
+@each $socialmedia in fb, twitter, instagram {
+	.#{$socialmedia}-icon {
+		background-image: url('../images/#{$socialmedia}.png');
+	}
+}
+
+$color: red;
+
+@function lighter ($n){
 }

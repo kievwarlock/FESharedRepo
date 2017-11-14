@@ -1,6 +1,7 @@
 extends layouts/_layout.pug
-block main
+block prepend header
 	- var currentPage = 'Home'
+block main
 	main
 		include includes/_forestOpen.pug
 		include includes/_structureType.pug
