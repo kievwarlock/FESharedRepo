@@ -1,0 +1,6 @@
+@import "components/mixins";
+
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr-Bold", 700);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr-Medium", 500);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr-Light", 300);
+@include font-face("HelveticaNeueCyr", "../fonts/HelveticaNeueCyr-Roman");
