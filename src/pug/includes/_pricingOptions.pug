@@ -3,42 +3,15 @@ article(class='pricing-options')
 	div(class='pricing-options__line')
 	p(class='pricing-options__text-description') For a broader coverage related to this topic of trees.
 	div(class='pricing-options__blocks-wrapper')
-		div(class='pricing-options__block')
-			div(class='pricing-options__pricing-plan') Basic
-			div(class='pricing-options__price') 
-				p(class='pricing-options__price-sum') $0
-				p(class='pricing-options__price-description') Free for life
+-var pricingOptions = [{plan: 'Basic', sum: '$0', description: 'Free for life', details: ['Canopy', 'Clearcutting', 'Close to nature', 'Forestry', 'Cloud forest', 'Chase']}, {plan: 'Professional', sum: '$19', description: 'Monthly payment', details: ['Dendrometry', 'Ecological', 'Succesion', 'Forest dynamics', 'Forest management', 'Forest migration']}, {plan: 'Enterprise', sum: '$70', description: 'Monthly payment', details: ['Definitons', 'Etymology', 'Evolution', 'Ecology', 'Components', 'Layers']}]
+each item in pricingOptions
+	div(class='pricing-options__block')
+		div(class='pricing-options__pricing-plan')= item.plan
+		div(class='pricing-options__price')
+			p(class='pricing-options__price-sum')= item.sum
+			p(class='pricing-options__price-description')= item.description
 			div(class='pricing-options__underblock-line')
 			div(class='pricing-options__block-text')
-				p Canopy
-				p Clearcutting
-				p Close to nature
-				p Forestry
-				p Cloud forest
-				p Chase
-		div(class='pricing-options__block')
-			div(class='pricing-options__pricing-plan') Professional
-			div(class='pricing-options__price') 
-				p(class='pricing-options__price-sum') $19
-				p(class='pricing-options__price-description') Monthly payment
-			div(class='pricing-options__underblock-line')
-			div(class='pricing-options__block-text')
-				p Dendrometry
-				p Ecological
-				p Succesion
-				p Forest dynamics
-				p Forest management
-				p Forest migration
-		div(class='pricing-options__block')
-			div(class='pricing-options__pricing-plan') Enterprise
-			div(class='pricing-options__price') 
-				p(class='pricing-options__price-sum') $70
-				p(class='pricing-options__price-description') Monthly payment
-			div(class='pricing-options__underblock-line')
-			div(class='pricing-options__block-text')
-				p Definitons
-				p Etymology
-				p Evolution
-				p Ecology
-				p Components
-				p Layers
+				ul
+					each subItem in item.details
+						li= subItem

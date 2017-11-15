@@ -1,6 +1,7 @@
 extends layouts/_layout.pug
+block prepend header
+	- var currentPage = 'About Us'
 block main
-	-var currentPage = 'About Us'
 	main
 		include includes/_forestOpenSecondaryPages.pug
 		include includes/_forestImportant.pug
