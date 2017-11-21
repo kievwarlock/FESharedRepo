@@ -5,6 +5,14 @@
 	flex-flow: row nowrap;
 	justify-content: center;
 
+	&__wrapper{
+		max-width: 970px;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		padding-right: 60px;
+	}
+
 	&__tabs-wrapper{
 		margin-right: 80px;
 		margin-bottom: 98px;
@@ -31,8 +39,8 @@
 	}
 
 	&__article{
-		width: 418px;
-		margin-right: 55px;
+		max-width: 410px;
+		margin-right: 40px;
 	}
 
 	&__article-caption{
@@ -44,7 +52,7 @@
 
 	&__article-text{
 		margin: 0;
-		margin-bottom: 24px;
+		margin-bottom: 16px;
 		color: $text-color;
 		font-size: 13px;
 		font-weight: 300;
