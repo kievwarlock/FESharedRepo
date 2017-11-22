@@ -1,0 +1,56 @@
+.header {
+	height: 85px;
+	background-color: #000;
+	font-weight: 300;
+	display: flex;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
+
+	&__menu {
+		text-transform: uppercase;
+		color: #fff;
+		width: 1200px;
+		display: flex;
+		flex-flow: row;
+		justify-content: space-between;
+		margin: 0 20px;
+	}
+	
+	&__logo {
+		text-align: left;
+		font-size: 36px;
+		font-weight: 300;
+		align-items: center;
+	}
+	&__logo span{
+		text-align: left;
+		color: #f59d3c;
+	}
+	&
+
+	
+	&__menu-list ul {
+		display: flex;
+		flex-flow: row;
+		list-style-type: none;
+	}
+
+	&__menu-list li{
+		list-style-type: none;
+		font-size: 14px;
+		padding: 0 15px;
+	}
+	
+	&__menu-item {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	&__menu-item_active {
+		text-decoration: none;
+		color: #f59d3c;
+	}
+	
+}	
+
