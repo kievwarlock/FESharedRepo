@@ -579,6 +579,83 @@ template {
   .forest-evolution__article-wrapper p {
     font-size: 14px; } }
 
+.footer {
+  background-color: #000; }
+  .footer__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .footer__icons img {
+      height: 20px;
+      padding: 17px 8px 12px 8px; }
+  .footer__text {
+    font-weight: bold;
+    color: #fff;
+    font-size: 0.75em;
+    padding-bottom: 11px;
+    text-align: center;
+    line-height: 1em; }
+
+.container {
+  margin: 0 auto;
+  width: 960px; }
+
+.contacts__section-title {
+  margin: 83px auto 58px; }
+
+.contacts__section-subtitle {
+  font-weight: 400;
+  color: #767272;
+  text-align: center;
+  font-size: 12px; }
+
+form.contacts-form input {
+  width: 425px;
+  height: 53px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #c0bfab; }
+  form.contacts-form input::-webkit-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 9px;
+    line-height: 20px;
+    margin-bottom: -30px;
+    color: red; }
+  form.contacts-form input:-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 9px;
+    line-height: 20px;
+    margin-bottom: -30px;
+    color: red; }
+  form.contacts-form input::-ms-input-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 9px;
+    line-height: 20px;
+    margin-bottom: -30px;
+    color: red; }
+  form.contacts-form input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 9px;
+    line-height: 20px;
+    margin-bottom: -30px;
+    color: red; }
+
+.contacts__section-title, .ecologistsSays__section-title {
+  font-size: 2.25em;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400; }
+
+.ecologistsSays__section-title {
+  padding-top: 83px; }
+
 body {
   font-family: HelveticaNeueCyr, sans-serif; }
 

@@ -1,0 +1,17 @@
+%section-title {
+	font-size: 2.25em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+
+
+.ecologistsSays {
+	&__section-title {
+		@extend %section-title;
+		padding-top: 83px;
+
+	}
+}
+
