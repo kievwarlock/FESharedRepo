@@ -12,15 +12,18 @@
     "gulp-concat": "^2.6.1",
     "gulp-csscomb": "^3.0.8",
     "gulp-imagemin": "^3.4.0",
+    "gulp-jquery": "^1.1.2",
     "gulp-notify": "^3.0.0",
     "gulp-pug": "^3.3.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
+    "gulp-sass-glob": "^1.0.8",
     "gulp-uglify": "^3.0.0",
     "gulp.spritesmith": "^6.5.1",
     "imagemin": "^5.3.1",
     "imagemin-pngquant": "^5.0.1",
-    "node-bourbon": "^4.2.8"
+    "node-bourbon": "^4.2.8",
+    "node-sass": "^4.7.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
