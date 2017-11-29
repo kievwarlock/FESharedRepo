@@ -1,10 +1,10 @@
-var gulp         = require('gulp'),
+var gulp           = require('gulp'),
 	spritesmith    = require('gulp.spritesmith'),
 	pug            = require('gulp-pug'),
 	sass           = require('gulp-sass'),
 	notify         = require('gulp-notify'),
 	autoprefixer   = require('gulp-autoprefixer'),
-cleanCSS       = require('gulp-clean-css'),
+	cleanCSS       = require('gulp-clean-css'),
 	bourbon        = require('node-bourbon'),
 	csscomb        = require('gulp-csscomb'),
 	rename         = require('gulp-rename'),
@@ -13,7 +13,18 @@ cleanCSS       = require('gulp-clean-css'),
 	pngquant       = require('imagemin-pngquant'),
 	concat         = require('gulp-concat'),
 	uglify         = require('gulp-uglify'),
+	sassGlob 	   = require('gulp-sass-glob'),
+	jquery         = require('gulp-jquery'),
 	reload         = browserSync.reload;
+
+gulp.task('jquery', function () {
+    return gulp.src('./node_modules/jquery/src')
+        .pipe(jquery({
+            flags: ['-deprecated', '-event/alias', '-ajax/script', '-ajax/jsonp', '-exports/global']
+        }))
+        .pipe(gulp.dest('./public/vendor/'));
+    // creates ./public/vendor/jquery.custom.js 
+});
 
 gulp.task('sprite', function(){
 	var spriteData = gulp.src(['src/img/icons/*.*'])
@@ -60,6 +71,7 @@ gulp.task('pug', function(){
 
 gulp.task('sass', function() {
     return gulp.src('src/scss/**/*.scss')
+    	.pipe(sassGlob())
         .pipe(sass({includePaths: bourbon.includePaths}) //подключаем Bourbon
         .on("error", notify.onError()))
         .pipe(rename({suffix: '.min', prefix : ''})) 

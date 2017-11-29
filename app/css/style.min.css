@@ -323,17 +323,29 @@ template {
   background-size: cover;
   background-position: center;
   overflow: hiiden;
-  height: 462px;
-  width: 100%;
-  color: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  min-height: 462px;
+  max-width: 100%;
+  color: #fff; }
+  .wood__wrapper {
+    max-width: 1100px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
   .wood__text {
-    width: 960px; }
+    max-width: 500px;
+    padding: 20px 20px;
+    float: left; }
+
   .wood__title {
     text-transform: uppercase;
     font-size: 56px;
@@ -346,7 +358,7 @@ template {
     font-weight: 100; }
   .wood__line {
     width: 65px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 2px solid #fff;
     margin: 40px 0; }
   .wood__small-text {
     color: #a2a2a2;
@@ -356,8 +368,57 @@ template {
     background-color: transparent;
     border: 2px solid #fff;
     text-transform: uppercase;
-    padding: 10px 20px;
+    padding: 10px 10px;
     margin: 40px 0; }
+  .wood__form-wrapper {
+    max-width: 250px;
+    margin: auto; }
+  .wood__input-form {
+    background: #fff;
+    max-width: 220px;
+    min-width: 200px;
+    text-align: center;
+    width: 40%;
+    border-radius: 5px;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-bottom: 20px; }
+  .wood__input-form-title {
+    background: #dfdec8;
+    padding: 10px;
+    color: #575050;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 5px 5px 0 0; }
+    .wood__input-form-title span {
+      color: #f27600; }
+  .wood__input-form input {
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #dfdec7; }
+  .wood input[placeholder] {
+    color: #d0d0d0;
+    font-size: 14px;
+    padding-top: 25px; }
+  .wood input::-moz-placeholder {
+    color: #d0d0d0;
+    font-size: 14px;
+    padding-top: 25px; }
+  .wood input:-moz-placeholder {
+    color: #d0d0d0;
+    font-size: 14px;
+    padding-top: 25px; }
+  .wood input:-ms-input-placeholder {
+    color: #d0d0d0;
+    font-size: 14px;
+    padding-top: 25px; }
+  .wood__input-form-submit {
+    background: #f27600;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 40px auto;
+    border: none; }
 
 .forest-open {
   background-color: #f5f5f5;
@@ -682,6 +743,7 @@ template {
   .forest-evolution__article-wrapper p {
     font-size: 14px; } }
 
+
 .callToActionFooter {
   height: 304px;
   background: url(../img/Wood.jpg) 50% 65%;
@@ -814,6 +876,73 @@ form.contacts-form {
     font-size: 12px;
     margin: 2.75em auto 10em; }
   .ecologistsSays__ecologists {
+
+.forest-important {
+  width: 100%;
+  background: #fff;
+  text-align: center; }
+  .forest-important__wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 10px; }
+  .forest-important__article-title {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 100; }
+  .forest-important__line {
+    width: 67px;
+    border-bottom: 2px solid #f27600;
+    margin: 20px auto; }
+  .forest-important__text-description {
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom: 30px; }
+  .forest-important__blocks-wrapper {
+    max-width: 1200px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .forest-important__block {
+    max-width: 300px;
+    margin: auto; }
+  .forest-important__block-title {
+    font-size: 16px; }
+  .forest-important__block-text {
+    color: #767272;
+    font-size: 14px; }
+
+.pricing-options {
+  width: 100%;
+  background: #f5f5f5;
+  text-align: center; }
+  .pricing-options__wrapper {
+    max-width: 1100px;
+    margin: auto;
+    padding: 60px 10px; }
+  .pricing-options__article-title {
+    text-transform: uppercase;
+    font-size: 36px;
+    font-weight: 100; }
+  .pricing-options__line {
+    width: 67px;
+    border-bottom: 2px solid #f27600;
+    margin: 20px auto; }
+  .pricing-options__text-description {
+    color: #827e7e;
+    font-size: 14px; }
+  .pricing-options__blocks-wrapper {
+    max-width: 1200px;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -851,6 +980,16 @@ form.contacts-form {
     color: #767272;
     font-size: 12px;
     margin: 10px; }
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .pricing-options__block {
+    max-width: 300px;
+    margin: auto; }
 
 body {
   font-family: HelveticaNeueCyr, sans-serif; }

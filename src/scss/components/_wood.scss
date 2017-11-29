@@ -3,14 +3,26 @@
 	background-size: cover;
 	background-position: center;
 	overflow: hiiden;
-	height: 462px;
-	width: 100%;
+	min-height: 462px;
+	max-width: 100%;
 	color: #fff;
-	display: flex;
-	justify-content: center;
+
 	
+	&__wrapper{
+		max-width:1100px;
+		margin: auto;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
 	&__text {
-		width: 960px;
+		max-width: 500px;
+		padding: 20px 20px;
+		float: left;
+
+
 	}
 	&__title {
 		text-transform: uppercase;
@@ -28,7 +40,7 @@
 
 	&__line {
 		width: 65px;
-		border-bottom: 1px solid #fff;
+		border-bottom: 2px solid #fff;
 		margin: 40px 0;
 	}
 	&__small-text {
@@ -41,7 +53,70 @@
 		background-color: transparent;
 		border: 2px solid #fff;
 		text-transform: uppercase;
-		padding: 10px 20px;
+		padding: 10px 10px;
 		margin: 40px 0;
 	}
+
+	&__form-wrapper {
+		max-width: 250px;
+		margin: auto;
+	}
+	&__input-form {
+		background: #fff;
+		max-width: 220px;
+		min-width: 200px;
+
+		text-align: center;
+		width: 40%;	
+		border-radius: 5px;
+		align-self: center;
+		margin-bottom: 20px;
+
 }
+	&__input-form-title {
+		background: #dfdec8;
+		padding: 10px;
+		color: #575050;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 600;
+		border-radius: 5px 5px 0 0;
+		span {
+			color: #f27600;
+		}
+}
+	&__input-form input {
+		padding: 10px;
+		border: none;
+		border-bottom: 1px solid #dfdec7;
+		}
+	input[placeholder]{
+		color: #d0d0d0;
+		font-size: 14px;
+		padding-top: 25px;
+	}
+	input::-moz-placeholder{
+		color: #d0d0d0;
+		font-size: 14px;
+		padding-top: 25px;
+	} 
+	input:-moz-placeholder {
+		color: #d0d0d0;
+		font-size: 14px;
+		padding-top: 25px;
+	} 
+	input:-ms-input-placeholder{
+		color: #d0d0d0;
+		font-size: 14px;
+		padding-top: 25px;
+	}
+
+	&__input-form-submit {
+		background: #f27600;
+		color: #fff;
+		padding: 10px 20px;
+		margin: 40px auto;
+		border: none;
+	}  
+}
+
