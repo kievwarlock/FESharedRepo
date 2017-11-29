@@ -1,0 +1,21 @@
+.footer {
+	background-color: $footer-bgc;
+	// height: 72px;
+
+	&__icons {
+		display: flex;
+		justify-content: center;
+		img {
+			height: 20px;
+			padding: 17px 8px 12px 8px;
+		}
+	}
+	&__text {
+		font-weight: bold;
+		color: #fff;
+		font-size: 0.75em;
+		padding-bottom: 11px;
+		text-align: center;
+		line-height: 1em;
+	}
+}

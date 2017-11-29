@@ -1,0 +1,70 @@
+%section-title {
+	font-size: 2.25em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	vertical-align: center;
+}
+
+@media screen and (max-width: 870px) {
+	font-size: 1.5em;
+}
+
+.ecologistsSays {
+	padding-bottom: 96px;
+	&__section-title {
+		@extend %section-title;
+		padding-top: 83px;
+		padding-bottom: 47px;
+		margin: 0 auto;
+	}
+	&__article-decorative-line__orange {
+		margin: 0 auto;
+		height: 0;
+		width: 67px;
+		border-bottom: 1px solid $accent-color;
+	}
+	&__section-subtitle {
+		font-weight: 400;
+		color: $text-color;
+		text-align: center;
+		font-size: 12px;
+		margin: 2.75em auto 10em;
+	}
+	&__ecologists {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+}
+
+.ecologist {
+	cursor: pointer;
+	flex: 0 1 262px;
+	&__says {
+		font-weight: 300;
+		margin-left: 14px;
+		font-size: 0.75em;
+		line-height: 20px;
+		letter-spacing: 0.5px;
+		color: $text-color;
+		margin-bottom: 82px;
+	}
+	&__img {
+		float: left;
+		margin-right: 12px;
+		height: 80px;
+		width: 80px;
+	}
+	&__name {
+		padding-top: 14px;
+		font-size: 16px;
+		font-weight: 700;
+		margin: 10px;
+	}
+	&__position {
+		color: $text-color;
+		font-size: 12px;
+		margin: 10px;
+	}
+}
