@@ -1,11 +1,12 @@
 article(class='forest-important')
-	h2(class='forest-important__article-title') Why forest is important
-	div(class='forest-important__line')
-	p(class='forest-important__text-description')
-	div(class='forest-important__blocks-wrapper')
-- var forestImportantContent = [{imgSrc: '../../img/RabbitIcon.png', alt: 'Rabbit', h3: 'Animals home', p:"Forests account for 75% of the gross primary productivity of the Earth's biosphere, and  human activity."}, {imgSrc: '../../img/RadioactiveIcon.png', alt: 'Radioactivity', h3: 'Radioactivity filter', p:"Forests are often home to many animal and plant species, and biomass per unit vegetation communities."}, {imgSrc: '../../img/ChristmasTreeIcon.png', alt:'Christmas Tree', h3: 'A source of oxygen', p:"Forest ecosystems can be found in all regions capable of sustaining tree growth, where natural fire."}]
-each item in forestImportantContent
-	div(class='forest-important__block')
-		img(class='forest-important__block-icon' src=item.imgSrc alt=item.alt)
-		h3(class='forest-important__block-title')= item.h3
-		p(class='forest-important__block-text')= item.p
+	div(class="forest-important__wrapper")
+		h2(class='forest-important__article-title') Why forest is important
+		div(class='forest-important__line')
+		p(class='forest-important__text-description') This article is about a community of trees or other woody.
+		div(class='forest-important__blocks-wrapper')
+			- var forestImportantContent = [{imgSrc: '../../img/RabbitIcon.png', alt: 'Rabbit', h3: 'Animals home', p:"Forests account for 75% of the gross primary productivity of the Earth's biosphere, and  human activity."}, {imgSrc: '../../img/RadioactiveIcon.png', alt: 'Radioactivity', h3: 'Radioactivity filter', p:"Forests are often home to many animal and plant species, and biomass per unit vegetation communities."}, {imgSrc: '../../img/ChristmasTreeIcon.png', alt:'Christmas Tree', h3: 'A source of oxygen', p:"Forest ecosystems can be found in all regions capable of sustaining tree growth, where natural fire."}]
+			each item in forestImportantContent
+				div(class='forest-important__block')
+					img(class='forest-important__block-icon' src=item.imgSrc alt=item.alt)
+					h3(class='forest-important__block-title')= item.h3
+					p(class='forest-important__block-text')= item.p

@@ -1,16 +1,19 @@
 div(class='wood')
-	section(class='wood__text')
-		h1(class='wood__title') Wo
-			span o
-			| d
-		h2(class='wood__largeText') The Forest is is a large area with trees or other woody vegetation.
-		div(class='wood__line')
-		p(class='wood__small-text') Forests at different latitudes form distinctly different ecozones: boreal forests near the poles tend to consist of evergreens, while tropical forests near the equator tend to be distinct from the temperate forests.mid-latitude.
-		button(class='wood__download-button') Download
-		aside(class='wood__input-form')
-			div(class="wood__input-form-title")
-				form(action='#') The game's pre-alpha
-				input(type='text' placeholder='name')
-				input(type='text' placeholder='Email')
-				input(type='text' placeholder='message')
-				input(type='submit' placeholder='Get started')
+	div(class="wood__wrapper")
+		section(class='wood__text')
+			h1(class='wood__title') Wo
+				span o
+				| d
+			h2(class='wood__largeText') The Forest is is a large area with trees or other woody vegetation.
+			div(class='wood__line')
+			p(class='wood__small-text') Forests at different latitudes form distinctly different ecozones: boreal forests near the poles tend to consist of evergreens, while tropical forests near the equator tend to be distinct from the temperate forests.mid-latitude.
+			button(class='wood__download-button') Download
+		div(class='wood__form-wrapper')
+			div(class="wood__input-form")
+				form(class='wood__input-form-title' action='#') The 
+					span game's 
+					| pre-alpha
+				input(class="wood__input-form-name" type='text' placeholder='name')
+				input(class="wood__input-form-email" type='text' placeholder='Email')
+				input(class="wood__input-form-message" type='text' placeholder='message')
+				button(class="wood__input-form-submit") Get started

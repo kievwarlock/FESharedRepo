@@ -10,7 +10,45 @@
 @import "components/structureType";
 @import "components/forestEvolution";
 
+@import "components/_forestImportant";
 
+.pricing-options {
+	width: 100%;
+	background: #f5f5f5;
+	text-align: center;
+		&__wrapper {
+		max-width: 1100px;
+		margin: auto;
+		padding: 60px 10px;
+		
+		}
+		&__article-title {
+			text-transform: uppercase;
+			font-size: 36px;
+			font-weight: 100;
+		}	
+		&__line {
+			width: 67px;
+			border-bottom: 2px solid #f27600;
+			margin: 20px auto;
+		}
+		&__text-description {
+			color: #827e7e;
+			font-size: 14px;
+		}
+		&__blocks-wrapper {
+			max-width:1200px;
+			margin: auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+			&__block {
+			max-width: 300px;
+			margin: auto;
+		}
+}
 
 
 body{
