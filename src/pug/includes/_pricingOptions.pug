@@ -4,15 +4,15 @@ article(class='pricing-options')
 		div(class='pricing-options__line')
 		p(class='pricing-options__text-description') For a broader coverage related to this topic of trees.
 		div(class='pricing-options__blocks-wrapper')
-			-var pricingOptions = [{plan: 'Basic', sum: '$0', description: 'Free for life', details: ['Canopy', 'Clearcutting', 'Close to nature', 'Forestry', 'Cloud forest', 'Chase']}, {plan: 'Professional', sum: '$19', description: 'Monthly payment', details: ['Dendrometry', 'Ecological', 'Succesion', 'Forest dynamics', 'Forest management', 'Forest migration']}, {plan: 'Enterprise', sum: '$70', description: 'Monthly payment', details: ['Definitons', 'Etymology', 'Evolution', 'Ecology', 'Components', 'Layers']}]
+			-var pricingOptions = [{plan: 'Basic', sum: '0', description: 'Free for life', details: ['Canopy', 'Clearcutting', 'Close to nature', 'Forestry', 'Cloud forest', 'Chase']}, {plan: 'Professional', sum: '19', description: 'Monthly payment', details: ['Dendrometry', 'Ecological', 'Succesion', 'Forest dynamics', 'Forest management', 'Forest migration']}, {plan: 'Enterprise', sum: '70', description: 'Monthly payment', details: ['Definitons', 'Etymology', 'Evolution', 'Ecology', 'Components', 'Layers']}]
 				each item in pricingOptions
 					div(class='pricing-options__block')
 						div(class='pricing-options__pricing-plan')= item.plan
 						div(class='pricing-options__price')
-							p(class='pricing-options__price-sum')= item.sum
+							span(class="pricing-options__dollar-sign")= '$'
+							span(class='pricing-options__price-sum')= item.sum
 							p(class='pricing-options__price-description')= item.description
-							div(class='pricing-options__underblock-line')
-							div(class='pricing-options__block-text')
-						ul
+						div(class='pricing-options__block-text')
+							ul
 							each subItem in item.details
-								li= subItem
+								li(class="pricing-options__list")= subItem

@@ -345,7 +345,6 @@ template {
     max-width: 500px;
     padding: 20px 20px;
     float: left; }
-
   .wood__title {
     text-transform: uppercase;
     font-size: 56px;
@@ -743,7 +742,6 @@ template {
   .forest-evolution__article-wrapper p {
     font-size: 14px; } }
 
-
 .callToActionFooter {
   height: 304px;
   background: url(../img/Wood.jpg) 50% 65%;
@@ -876,6 +874,43 @@ form.contacts-form {
     font-size: 12px;
     margin: 2.75em auto 10em; }
   .ecologistsSays__ecologists {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+
+.ecologist {
+  cursor: pointer;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 262px;
+          flex: 0 1 262px; }
+  .ecologist__says {
+    font-weight: 300;
+    margin-left: 14px;
+    font-size: 0.75em;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: #767272;
+    margin-bottom: 82px; }
+  .ecologist__img {
+    float: left;
+    margin-right: 12px;
+    height: 80px;
+    width: 80px; }
+  .ecologist__name {
+    padding-top: 14px;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 10px; }
+  .ecologist__position {
+    color: #767272;
+    font-size: 12px;
+    margin: 10px; }
 
 .forest-important {
   width: 100%;
@@ -939,7 +974,8 @@ form.contacts-form {
     margin: 20px auto; }
   .pricing-options__text-description {
     color: #827e7e;
-    font-size: 14px; }
+    font-size: 14px;
+    margin-bottom: 40px; }
   .pricing-options__blocks-wrapper {
     max-width: 1200px;
     margin: auto;
@@ -948,38 +984,6 @@ form.contacts-form {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
-
-.ecologist {
-  cursor: pointer;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 262px;
-          flex: 0 1 262px; }
-  .ecologist__says {
-    font-weight: 300;
-    margin-left: 14px;
-    font-size: 0.75em;
-    line-height: 20px;
-    letter-spacing: 0.5px;
-    color: #767272;
-    margin-bottom: 82px; }
-  .ecologist__img {
-    float: left;
-    margin-right: 12px;
-    height: 80px;
-    width: 80px; }
-  .ecologist__name {
-    padding-top: 14px;
-    font-size: 16px;
-    font-weight: 700;
-    margin: 10px; }
-  .ecologist__position {
-    color: #767272;
-    font-size: 12px;
-    margin: 10px; }
         -ms-flex-direction: row;
             flex-direction: row;
     -ms-flex-wrap: wrap;
@@ -988,8 +992,38 @@ form.contacts-form {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .pricing-options__block {
-    max-width: 300px;
-    margin: auto; }
+    max-width: 400px;
+    margin: auto;
+    min-width: 300px; }
+  .pricing-options__pricing-plan {
+    background: #2d2d2d;
+    color: #fff;
+    padding: 15px 55px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px; }
+  .pricing-options__price {
+    background: #2d2d2d;
+    color: #fff;
+    padding: 25px 55px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 5px solid #f27600; }
+  .pricing-options__dollar-sign {
+    font-size: 14px; }
+  .pricing-options__price-sum {
+    font-size: 60px; }
+  .pricing-options__price-description {
+    font-weight: 100; }
+  .pricing-options__block-text {
+    background: #fff;
+    margin-top: -15px; }
+  .pricing-options__list {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #827e7e;
+    padding: 15px 0; }
 
 body {
   font-family: HelveticaNeueCyr, sans-serif; }
